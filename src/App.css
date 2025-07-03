@@ -1,0 +1,236 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Focus Sports Section */
+.focus-sports {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Image Container */
+.sport-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Hide overflow for more control over text positioning */
+}
+
+/* Static Image Styling */
+.sport-image {
+    width: 200px; /* Increase image size */
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Stronger box shadow for depth */
+    transition: all 0.5s ease-in-out;
+}
+
+/* Hover effect on image */
+.sport-image-container:hover .sport-image {
+    transform: scale(1.1); /* Scale up image more aggressively */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6); /* More intense shadow on hover */
+}
+
+/* Sport Name Styling */
+.sport-name {
+    font-size: 3rem; /* Increase font size dramatically */
+    font-weight: 900; /* Extra-bold font */
+    text-transform: uppercase;
+    letter-spacing: 5px; /* Increased spacing for drama */
+    margin-top: 10px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    color: transparent; /* Make text transparent initially */
+    background-image: linear-gradient(to right, #ff6f61, #f39c12); /* Gradient background */
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 15px 0;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(10px); /* Initial position */
+    transition: all 0.4s ease-in-out;
+}
+
+/* Hover Effect on Sport Name */
+.sport-image-container:hover .sport-name {
+    transform: translateY(-20px); /* Move the name up significantly */
+    background-image: linear-gradient(to right, #ff8c00, #ff3d00); /* Change gradient on hover */
+    text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.7); /* Add dramatic text shadow */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); /* Enhanced shadow effect */
+    animation: popUp 0.5s ease-out; /* Add popping effect */
+}
+
+/* Animation for pop-up effect */
+@keyframes popUp {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+}
+
+/* Glow Animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 12px rgba(255, 255, 255, 0.9), 0 0 25px rgba(255, 255, 255, 1);
+    }
+}
+
+/* Responsive grid for images */
+@media (max-width: 768px) {
+    .focus-sports {
+        padding: 10px;
+    }
+
+    .sport-image {
+        width: 160px; /* Adjust image size for smaller screens */
+    }
+
+    .sport-name {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* For even smaller screens */
+@media (max-width: 480px) {
+    .sport-image {
+        width: 140px; /* Reduce image size more for mobile */
+    }
+
+    .sport-name {
+        font-size: 2rem; /* Reduce font size for very small screens */
+    }
+}
+
+/* Navbar Logo Styling */
+header .flex.items-center img {
+    width: 40px; /* Adjust size of logo */
+    height: auto;
+}
+
+/* Hero Section - Background Image */
+.hero-section {
+    height: 100vh;
+    background: url('https://via.placeholder.com/1200x800') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Cricket Sport Name Styling */
+/* Cricket Sport Name Styling */
+/* Cricket Sport Name Styling */
+.sport-image-container:nth-child(1) .sport-name {
+    font-size: 116rem; /* Very large font size for Cricket */
+    font-weight: 900; /* Extra-bold font */
+    text-transform: uppercase;
+    letter-spacing: 5px; /* Increased letter spacing for bold appearance */
+    margin-top: 10px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    color: transparent; /* Transparent text to apply gradient */
+    background-image: linear-gradient(to right, #ff6f61, #f39c12); /* Apply gradient */
+    background-clip: text; /* Clip the background to text */
+    -webkit-background-clip: text; /* Safari support */
+    padding: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Add a subtle shadow for depth */
+    transform: translateY(5px); /* Slight downward shift initially */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect on Cricket Name */
+.sport-image-container:nth-child(1):hover .sport-name {
+    transform: translateY(-10px); /* Lift the name on hover */
+    background-image: linear-gradient(to right, #f39c12, #ff8c00); /* Change gradient color */
+    text-shadow: 3px 3px 15px rgba(255, 255, 255, 0.7); /* Enhanced shadow on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* More intense shadow on hover */
+}
+
+
+/* Animation for pop-up effect */
+@keyframes popUp {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+}
+
+/* CSS for Announcements Scrolling */
+.animate-marquee {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
